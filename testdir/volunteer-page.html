@@ -1,0 +1,155 @@
+<?php
+  if (!isset($_SESSION))
+  {
+    session_start();
+  }
+  if (isset($_SESSION['VAsubmit']))
+  {
+    unset($_SESSION['VAsubmit']);
+  }
+?>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> West Valley Food Pantry - Volunteer </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="West San Fernando Valley Food Pantry provides emergency food to the needy and homeless">
+  <meta name="keywords" content="food pantry,Woodland Hills,West Valley Food Pantry,emergency food,homeless,
+            poor,San Fernando Valley,Los Angeles,California">
+  <meta name="author" content="Henry Suzukawa, West Valley Food Pantry" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="css/page-def.css">
+  <script src="js/includeHTML.js"></script>
+  <script src="js/adjustiframeheightonload.js"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-61848179-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <div class="page_box">
+
+<!-- create a cascading menu bar for the home page and the masthead -->
+
+      <div w3-include-html="include/pantrymast-top.html"></div>
+
+<!-- begin page content -->
+
+      <div class="container-responsive">
+
+        <div class="row">
+
+          <div class="col-sm-8 col-sm-offset-2">
+
+            <h4 style="text-align:center;">We always need more volunteers!</h4>
+
+            <p>Volunteers typically work at the Pantry in two-and-a-half hour shifts, 
+               Monday through Thursday, and one shift on Friday. Volunteers may schedule to work shifts once a week, 
+               or once a month or more, depending upon interest and availability.<br><br>
+
+               Volunteers sort and store food as it is received, and dispense it to recipients. They also validate 
+               recipients' eligibility. Volunteers may also pick up donated food on a regular basis from markets, other donors, 
+               and food drives.<br><br>
+
+              Volunteers also help promote food drives and donations through clubs and organizations.<br><br>
+
+              Volunteer drivers are especially needed. We have several pickups from grocery stores during the week. If you
+              are willing to be added to the available drivers list, please contact Julianne Sorice (wvfoodpantry@gmail.com).
+<!--
+              If you want to try sorting and organizing the food, we have an <b>Open Volunteer Day</b>
+              every Monday from 10-12 am. Come and help out with whatever is needed at that
+              time. You may like it well enough to volunteer on a more frequent basis.
+-->
+            </p>
+            <br>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-4 col-sm-offset-2">
+
+            <h4>Volunteer to help at the Food Pantry.</h4>
+            <p>Click the Volunteer Form Button</p>
+
+          </div>
+
+          <div class="col-sm-4">
+
+            <br>
+            <a href="vol-app-form-page.html" class="btn btn-primary btn-block">
+               Volunteer Form</a>
+            <br><br>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-8 col-sm-offset-2">
+
+            <h4 style="text-align:center;">Training May through mid-August Limited</h4>
+
+            <p>
+              Volunteers who wish to distribute food at the Pantry must complete training.
+              Opportunities to train volunteers to distribute food are limited from May through 
+              mid-August due to an influx of volunteers over the summer. If you wish to work at the 
+              Pantry distributing food, you may have to wait until the fall.    
+            </p>
+
+          </div>
+
+        </div>
+ 
+        <div class="row">
+
+          <div class="col-sm-8 col-sm-offset-2">
+
+            <h4 style="text-align:center">Supermarket Food Drives</h4>
+
+            <p>
+              Help is needed the first Saturday of every month at the Sprouts Farmers Market at 21821 Ventura Blvd
+              (at the corner of Ventrua and Topanga Canyon in Woodland Hills). 
+              It consists of a two hour shift, 10 a.m. - 4 p.m. 
+              Also, we need a scheduler for the Sprouts drive, and a driver to pick up the food 
+              and transport it to the Pantry. Interested?<br><br>
+
+              To sign up, contact Jeff Albee or Al Trumpler. If you do
+              not have their phone numbers, leave a message at the pantry, (818) 346-5554</p>
+            </p>
+            <br>
+
+          </div>
+
+        </div>
+ 
+      </div>
+
+    </div>
+
+<!-- add the footer -->
+
+    <div w3-include-html="include/footer-top.html"></div>
+
+    <script>includeHTML();</script>
+    
+  </div>
+</body>
+</html>

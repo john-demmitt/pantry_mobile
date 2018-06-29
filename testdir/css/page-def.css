@@ -1,0 +1,27 @@
+/* move the body definition to here too */
+body {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #00c0aa;
+  /* squirrel green */ }
+
+div.page {
+  /* Outer Page Area */
+  width: 90%;
+  text-align: left;
+  margin: 0 auto;
+  overflow: visible; }
+
+div.page_box {
+  /* working area */
+  border: 0.00pt none #ffffff;
+  background-color: #ffffff;
+  border: 2.0px ridge #000000;
+  width: 90%;
+  padding: 1px 3px;
+  overflow: visible;
+  margin: 0 auto; }
+
+/*  end of new stuff */
+
+/*# sourceMappingURL=page-def.css.map */

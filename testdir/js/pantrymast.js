@@ -1,0 +1,66 @@
+/*
+  The navbar menu and masthead for the Pantry website (top level)
+*/
+
+document.write('\
+      <nav class="navbar navbar-default">\
+        <div class="container-fluid">\
+          <div class="navbar-header">\
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">\
+              <span class="icon-bar"></span>\
+              <span class="icon-bar"></span>\
+              <span class="icon-bar"></span>\
+             </button>\
+            <a class="navbar-brand" href="index.html">West Valley Food Pantry</a>\
+          </div>\
+          <div class="collapse navbar-collapse" id="myNavbar">\
+            <ul class="nav navbar-nav navbar-right">\
+              <li class="navbar-item">\
+                <a href="index.html">Home</a>\
+              </li>\
+              <li>\
+                <a href="about-us.html">About Us</a>\
+              </li>\
+              <li>\
+                <a href="news-page.html">News</a>\
+              </li>\
+              <li>\
+                <a href="calendar-page.html">Calendar</a>\
+              </li>\
+              <li>\
+                <a href="volunteer-page.html">Volunteer</a>\
+              </li>\
+              <li>\
+                <a href="donate-page.html">Donate</a>\
+              </li>\
+              <li>\
+                <a href="find-us.html">Find Us</a>\
+              </li>\
+              <li>\
+                <a href="members/members-top.html">Contact Us</a>\
+              </li>\
+            </ul>\
+          </div>\
+        </div>\
+      </nav>\ 
+      <div class="container-responsive">\
+        <div class="col-sm-3">\
+          <img class="img-responsive" src="images/logos/WVFP_Logo_P_H.jpg" alt="WVFP Logo">\
+        </div>\
+        <div class="col-sm-5">\
+          <br><br>\
+          <h4 style="text-align:center;"><i>An interfaith community supported approach<br>to alleviating hunger</i></h4>\
+        </div>\
+        <div class="col-sm-4">\
+          <h5 style="text-align:right;">\
+            <br><br>\
+            5700 Rudnick Avenue<br>\
+            Woodland Hills, CA 91367<br><br>\
+            T: 818 346 5554 F: 818 346 3349\
+          </h5>\
+        </div>\
+        <div class="col-sm-12">\
+          &nbsp;\
+        </div>\
+      </div>\
+')

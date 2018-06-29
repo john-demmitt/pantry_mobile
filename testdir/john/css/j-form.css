@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@media screen and (max-width: 800px){
+	label {
+/*visibility: hidden;	*/
+	}
+}
+	body {
+		font-family:sans-serif;
+		background-color:white;
+		width:100%;
+		font-size: 14px;
+}
+
+h1 {
+	font-size: 1.5rem;
+	color:rgba(51,183,210,0.7);
+	text-align: center;
+	
+}
+
+h4 {
+		font-size: 1rem;
+	color:rgba(51,183,210,1);
+	text-align: center;
+
+}
+
+form {
+			padding:.5rem; 
+		margin:.5rem;
+		background-color:rgba(0,183,164,0.3);
+		width:90%;
+display: flex;
+		flex-flow: row wrap;
+}
+
+ul {
+				padding:.5rem; 
+		margin:.5rem;
+		background-color:rgba(0,183,164,0.3);
+display: flex;
+		flex-flow: row wrap;
+width: 100%;
+}
+
+li {
+	display: flex;
+		flex-flow: row wrap;
+
+			flex: 1 0 320px;
+
+}
+
+
+	label {
+		color:white;
+		font-size: 1.25rem;
+			flex: 1 0 320px;
+
+}
+
+	input[type=text], 
+input[type=tel],
+input[type=email]
+{
+		margin:0,.5rem,0,.5rem;
+				font-size: 1.5rem;
+
+}
+
+.state-zip {
+	display:flex;
+	flex-flow: row;
+}
+
+.state {
+	line-height: 1.4;
+	font-size: 1.5rem;
+	flex: 1 0 50px;
+	max-width: 25%;
+}
+
+input#zip {
+}
