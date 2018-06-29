@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 @media screen and (max-width: 800px){
-	label {
-/*visibility: hidden;	*/
+	.pers_info label {
+display: none;	
 	}
 }
 	body {
@@ -13,26 +13,35 @@
 }
 
 h1 {
-	font-size: 1.5rem;
-	color:rgba(51,183,210,0.7);
+	font-size: 2.5rem;
+	color:rgba(11, 170, 202, 1);
 	text-align: center;
-	
+	text-transform: uppercase;
 }
 
-h4 {
-		font-size: 1rem;
+h2 {
+		font-size: 1.75rem;
 	color:rgba(51,183,210,1);
 	text-align: center;
+	text-transform: capitalize;
+margin-bottom: 5px;
+}
+
+h3 {
+	margin-top: 0px;
+	font-size: 1.5rem;
+color:rgba(51,183,210,1);
+text-align: center;
+text-transform: capitalize;
 
 }
+
 
 form {
 			padding:.5rem; 
 		margin:.5rem;
 		background-color:rgba(0,183,164,0.3);
 		width:90%;
-display: flex;
-		flex-flow: row wrap;
 }
 
 ul {
@@ -42,21 +51,22 @@ ul {
 display: flex;
 		flex-flow: row wrap;
 width: 100%;
+justify-content: flex-start;
 }
 
 li {
 	display: flex;
 		flex-flow: row wrap;
 
-			flex: 1 0 320px;
+			flex: 1 0 auto;
+			justify-content: flex-start;
 
 }
 
 
 	label {
 		color:white;
-		font-size: 1.25rem;
-			flex: 1 0 320px;
+		font-size: 1.5rem;
 
 }
 
@@ -66,7 +76,7 @@ input[type=email]
 {
 		margin:0,.5rem,0,.5rem;
 				font-size: 1.5rem;
-
+min-width: 290px;
 }
 
 .state-zip {
@@ -77,9 +87,18 @@ input[type=email]
 .state {
 	line-height: 1.4;
 	font-size: 1.5rem;
-	flex: 1 0 50px;
-	max-width: 25%;
 }
 
 input#zip {
+
+}
+
+a.pop {
+   
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+	white-space: nowrap; 
 }
