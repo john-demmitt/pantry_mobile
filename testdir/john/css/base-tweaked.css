@@ -66,7 +66,8 @@
 }
 /*basic styles*/
 html, body {
-	margin: 0;
+    margin: 0;
+    font-size: 14px;
 }
 html {
 	background: #00b7a4;
@@ -86,7 +87,7 @@ h1, h2, h3, h4 {
 	font-weight: normal;
 	font-family: LatoLight, Helvetica, sans-serif;
 	text-shadow: 0 1px 0 rgba(26, 25, 25, 0.75);
-	color:#33b7d2;
+	color:#00b7a4;
 	margin: 0;
 	line-height: 1;
 }
@@ -125,36 +126,35 @@ code {
 /*inline styles*/
 
 .volunteer-form {
-	line-height: 1.4;
-	background: rgba(51, 183, 210, 0.6);
-
+	line-height: 1.2;
 }
-.vform-group {
+.form-group {
+	background: rgba(51, 183, 210, 0.2);
 	margin-bottom: 1em;
 	padding: 5px;
 }
-.vform-group ul {
+.form-group ul {
 	list-style: none;
-	margin: 0 0 2em;
+	margin: 0 0 1em;
 	padding: 0;
 }
-.vform-group li {
+.form-group li {
 	margin-bottom: 0.5em;
 }
-.vform-group h3 {
+.form-group h3 {
 	margin-bottom: 1em;
 }
-.vform-fields input[type="text"],
-.vform-fields input[type="tel"],
-.vform-fields input[type="url"],
-.vform-fields input[type="email"],
-.vform-fields input[type="number"],
-.vform-fields select {
+.form-fields input[type="text"],
+.form-fields input[type="tel"],
+.form-fields input[type="url"],
+.form-fields input[type="email"],
+.form-fields input[type="number"],
+.form-fields select {
   box-sizing: border-box;
   padding: 0.6em 0.8em;
-  color: #999;
-  background: #f7f7f7;
-  border: 1px solid #e1e1e1;
+  color: #00b7a4;
+  background: white;
+  border: 1px solid #00b7a4;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -163,20 +163,20 @@ code {
   line-height: normal;
   max-height: 3em;
 }
-.vform-fields input[type="text"]:focus,
-.vform-fields input[type="tel"]:focus,
-.vform-fields input[type="url"]:focus,
-.vform-fields input[type="email"]:focus,
-.vform-fields input[type="number"]:focus,
-.vform-comm textarea:focus,
-.vform-fields select:focus {
+.form-fields input[type="text"]:focus,
+.form-fields input[type="tel"]:focus,
+.form-fields input[type="url"]:focus,
+.form-fields input[type="email"]:focus,
+.form-fields input[type="number"]:focus,
+.form-comm textarea:focus,
+.form-fields select:focus {
   color: #333;
   border: 1px solid #C17CCF;
   outline: none;
   background: #f2f2f2;
 }
 
-.vform-comm textarea {
+.form-comm textarea {
     display: block;
     box-sizing: border-box;
     font: 0.9em Lato, Helvetica, sans-serif;
@@ -206,49 +206,42 @@ code {
 .register-btn:hover, .register-btn:focus {
 	background: #C17CCF;
 }
-
-
-
-
-
-
-
 /*flex it*/
 .volunteer-form {
 	display: flex;
 	flex-wrap: wrap;
 }
-.vform-group {
-	flex: 1 0 350px;
+.form-group {
+	flex: 1 0 300px;
 }
-.vform-submit {
+.form-submit {
 	flex: 0 0 100%;
 }
-.vform-fields li {
+.form-fields li {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.vform-fields input[type="text"],
-.vform-fields input[type="tel"],
-.vform-fields input[type="url"],
-.vform-fields input[type="email"],
-.vform-fields input[type="number"],
-.vform-fields select {
+.form-fields input[type="text"],
+.form-fields input[type="tel"],
+.form-fields input[type="url"],
+.form-fields input[type="email"],
+.form-fields input[type="number"],
+.form-fields select {
 	flex: 1 0 230px;
 }
-.vform-fields label {
+.form-fields label {
 	flex: 1 0 90px;
 	max-width: 200px;
 }
-.vform-service, .vform-other {
+.form-skills, .form-other {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.vform-service li {
-	width: 210px;
+.form-skills li {
+	width: 145px;
 }
-.vform-other li {
-width:200px;
+.form-other li {
+	flex: 1 0 200px;
 }
