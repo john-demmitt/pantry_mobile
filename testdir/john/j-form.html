@@ -8,45 +8,42 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/j-form.css" rel="stylesheet" type="text/css">
   <script src="js/jquery.js"></script>
-  
+
 	<script src="js/bootstrap.js"></script>
 <script>$(function () {
   $('[data-toggle="popover"]').popover()
 })</script>
-	
+
 	</head>
 	<body>
        <h1>Volunteer Application</h1>
 
-   
-      <form class="register-form" action=" " method="post" enctype="multipart/form-data" autocomplete="on">
+
+      <form class="volunteer-form" action=" " method="post" enctype="multipart/form-data" autocomplete="on">
+
         <section class="form-group">
 
-             <ul> <li class="pers_info"><label for="first_name_field">First Name*:</label>
+            <ul class="form-fields">
+                <li class="pers_info"><label for="first_name_field">First Name*:</label>
      <input type="text" name="first_name_field" id="first_name_field"
              placeholder="First Name" required autofocus></li>
-   <br>
 
    <li class="pers_info"> <label for="last_name_field">Last Name*:</label>
-
 		  <input type="text" name="last_name_field" id="last_name_field"
-             placeholder="Last Name" required></li> 
-   <br>
-   <li class="pers_info"><label for="email_add">E-mail Address*:</label>
+             placeholder="Last Name" required></li>
+
+             <li class="pers_info"><label for="email_add">E-mail Address*:</label>
      <input type="email" name="email_add" id="email_add"  placeholder="Email" required></li>
-		  <br>
-      <li class="pers_info"><label for="tel">Telephone*:</label>
+
+     <li class="pers_info"><label for="tel">Telephone*:</label>
      <input type="tel" name="tel" id="tel" placeholder="Phone Number" required></li>
-   <br>
-				 
-   <li class="pers_info"><label for="st_add">Mailing Address*:</label>
+
+     <li class="pers_info"><label for="st_add">Mailing Address*:</label>
      <input type="text" name="st_add" id="st_add"  placeholder="Street Address" required></li>
-   <br>
 
    <li class="pers_info"><label for="city">City*:</label>
      <input type="text" name="city" id="city" placeholder="City" required></li>
 
-      <br>
       <li>
         <li class="pers_info">		  <label for="state">State</label>
 		  <select class="state" size="1" name="state" required>
@@ -105,14 +102,14 @@
       <li class="pers_info">
 		  <label for="zip">zip</label>
      <input type="text" name="zip" id="zip"  placeholder="Zip" required>
-			  <br></li></li>
+			  </li></li>
               </ul>
               </section>
-              <br><br>
+
               <section class="form-group">
               <ul><li>
 		  <h4>Are you under 18 years of age and/or attending school? *</h4>
-   
+
       <label>
       <input type="radio" id="y18_p" value="y18_p" name="age_radio_group">
         Yes
@@ -128,51 +125,51 @@
           </label>
  <input type="text" name="is_proj" id="is_proj" class="form-control input-sm"
          placeholder="Name of organization/Type of project"></li></ul></section>
-<br><br>
 
-  
 
-<section class="form-group">
-
+<section class="form-service">
               <h2> Types of service</h2>
               <h3>Select all that interest you</h3>
               <ul>
               <li>
       <input type="checkbox" id="col_food" value="col_food" name="col_food">
-         <label for="col_food">Sprouts Food Drives  <a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Sprouts Food Drives" data-content="Collect food donated by supermarket shoppers, two-hour shifts: 10 am to 4 pm on the first Saturday each month."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label>     
+         <label for="col_food">Sprouts Food Drives  <a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Sprouts Food Drives" data-content="Collect food donated by supermarket shoppers, two-hour shifts: 10 am to 4 pm on the first Saturday each month."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label>
         </li>
 
 		  <li>
-         
               <input type="checkbox" id="org_food" value="org_food" name="org_food">
               <label for="org_food">
          Organize your own food drive <a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Organize a Drive" data-content="Organize a food drive in your congregation, workplace, school, civic group, or neighborhood. Click here for instructions."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label>
-         <br></li> 
+         </li>
 
-         <li>         
+         <li>
          <input type="checkbox" id="pkup_food" value="pkup_food" name="pkup_food">
          <label for="pkup_food">Pick-up from donors; deliver to Pantry.
-         <a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Drivers" data-content="Typically mornings, regular routes and other locations as needed. Pickups scheduled 7 days a week."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label><br></li>
+         <a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Drivers" data-content="Typically mornings, regular routes and other locations as needed. Pickups scheduled 7 days a week."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label></li>
 
          <li>
          <input type="checkbox" id="unload_food" value="unload_food" name="unload_food">
          <label for="unload_food">Unload/Sort Food at the Pantry.
-            <a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Receiving" data-content="Monday-Friday 2-hour shifts from 8am-2pm. Receiving and recording food donations from our regular supermarket donors, walk-ins and food drives. Sorting and boxing items for storage."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label><br></li>
-
+            <a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Receiving" data-content="Monday-Friday. Typically 1 or 2 days a week: 8-10 am or 10am-1pm. Estimate weight of items received and post in daily log sheet. Transfer arriving food to sorting tables. Separate fresh items to bring into Pantry. Sort and store non-perishables. Maintain and clean storage facilities."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label></li>
 
          <li>
          <input type="checkbox" id="dist_food" value="dist_food" name="dist_food">
-         <label for="dist_food">Distribute food to clients.<a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="In-Pantry Servers" data-content="Requires training, shift availability limited: Monday thru Thursday - morning & afternoon shifts; Friday -  morning shift only. Training opportunities limited during summer due to influx of summer volunteers."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label><br></li>
+         <label for="dist_food">Distribute food to clients.<a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="In-Pantry Servers" data-content="Mon-Fri AM & Mon-Thu Afternoon shifts. Typically 1 shift a month. Serve clients gathreing their household's allotment of food, completing paperwork and recording visits. Requires training. Shift availability limited. Training opportunities limited during summer due to influx of summer volunteers."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label></li>
 
-         <label>
+         <li>
+          <input type="checkbox" id="cvs" value="cvs" name="cvs">
+          <label for="cvs">Pantry Client Check-In<a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="In-Pantry Computer Volunteers" data-content="Mon-Fri AM & Mon-Thu Afternoon shifts. Typically 1 shift a week.  Requires training and some basic computer skill. Using our database, verify and register client visits to the Pantry. Update client files as necessary. Check server's notes for completeness and accuracy."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label></li>
+ 
+
+         <li>
          <input type="checkbox" id="tech_supp" value="tech_supp" name="tech_supp">
-         Provide technical help (data entry, web site, social media, etc.).
-         </label><br></li><li>
-         <label>
+         <label for="tech_supp">Provide technical IT help.<a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Techies" data-content="Data entry, web site/social media content/development, data analytics, etc."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label></li>
+
+         <li>
          <input type="checkbox" id="cleric_supp" value="cleric_supp" name="cleric_supp">
-         Provide clerical help (thank you notes, phone calls, mailing, etc.).
-         </label><br></li></ul>
+         <label for="cleric_supp">Provide clerical help.<a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Clerical" data-content="Emails, phone calls, mailing, etc."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label></li>
    <br><br>
+         </ul>
 <ul>
   <li>
               <label for="other_serv">Other service(s) you could offer:</label>
@@ -183,69 +180,17 @@
    <section class="form-group">
     <ul class="form-fields">
       <li>
-              <h4>Of interest to us:</h4>
               <label for="allLanguages[]">
-              Do you speak a(any) language(s) other than English?
-              Please select all that apply<br> (Select multiple lines by holding down
-              the Ctrl key while you click).<br>(<i>If you know one that is not listed,
-              select Other and tell us about it in the comments.</i>)
-            </label>
-            <br><br>
-            <select multiple="multiple" name="allLanguages[]" class="form-control">
-              <option value="Fluent Spanish">Fluent Spanish</option>
-              <option value="Some Spanish">Some Spanish</option>
-              <option value="Fluent Afrikaans">Fluent Afrikaans</option>
-              <option value="Some Afrikaans">Some Afrikaans</option>
-              <option value="Fluent Armenian">Fluent Armenian</option>
-              <option value="Some Armenian">Some Armenian</option>
-              <option value="Fluent Chinese">Fluent Chinese</option>
-              <option value="Some Chinese">Some Chinese</option>
-              <option value="Fluent Dari">Fluent Dari</option>
-              <option value="Some Dari">Some Dari</option>
-              <option value="Fluent Farsi">Fluent Farsi</option>
-              <option value="Some Farsi">Some Farsi</option>
-              <option value="Fluent Flemish">Fluent Flemish</option>
-              <option value="Some Flemish">Some Flemish</option>
-              <option value="Fluent French">Fluent French</option>
-              <option value="Some French">Some French</option>
-              <option value="Fluent German">Fluent German</option>
-              <option value="Some German">Some German</option>
-              <option value="Fluent Gujurati">Fluent Gujurati</option>
-              <option value="Some Gujurati">Some Gujurati</option>
-              <option value="Fluent Hebrew">Fluent Hebrew</option>
-              <option value="Some Hebrew">Some Hebrew</option>
-              <option value="Fluent Hindi">Fluent Hindi</option>
-              <option value="Some Hindi">Some Hindi</option>
-              <option value="Fluent Italian">Fluent Italian</option>
-              <option value="Some Italian">Some Italian</option>
-              <option value="Fluent Japanese">Fluent Japanese</option>
-              <option value="Some Japanese">Some Japanese</option>
-              <option value="Fluent Korean">Fluent Korean</option>
-              <option value="Some Korean">Some Korean</option>
-              <option value="Fluent Portuguese">Fluent Portuguese</option>
-              <option value="Some Portuguese">Some Portuguese</option>
-              <option value="Fluent Russian">Fluent Russian</option>
-              <option value="Some Russian">Some Russian</option>
-              <option value="Fluent Swedish">Fluent Swedish</option>
-              <option value="Some Swedish">Some Swedish</option>
-              <option value="Fluent Tagalog">Fluent Tagalog</option>
-              <option value="Some Tagalog">Some Tagalog</option>
-              <option value="Fluent Telugu">Fluent Telugu</option>
-              <option value="Some Telugu">Some Telugu</option>
-              <option value="Fluent Urdu">Fluent Urdu</option>
-              <option value="Some Urdu">Some Urdu</option>
-              <option value="Fluent Vietnamese">Fluent Vietnamese</option>
-              <option value="Some Vietnamese">Some Vietnamese</option>
-              <option value="Other">Other</option>
-            </select>
+              Do you speak a(any) language(s) other than English?</label>
+            <input type="text" name="allLanguages[]" id="allLanguages[]" class="form-control input-sm" placeholder="Languages and fluency">
             <br><br></li>
           </ul>
+
           <ul class="form-fields">
 <li>
               <label for="car_type">
                 Type of vehicle <i>(if interested in collecting or picking up food)</i>:
               </label>
-
 		  <input type="text" name="car_type" id="car_type" class="form-control input-sm"
              placeholder="Type of Car">
             </li></ul>
@@ -254,11 +199,10 @@
    <section class="form-group">
       <ul class="form-fields">
 <li>
-                 <h4>How did you hear about us?</h4>
-            (<i>If you feel the choices too limiting, please explain in the comments.</i>)<br><br>
+                <label for="how_hear">How did you hear about us?</label>
    </li>
    <li>
-            <select name="how_hear" class="form-control">
+            <select name="how_hear" >
               <option value="">Select ...</option>
               <option value="Website">Our Website</option>
               <option value="Internet">The Internet</option>
@@ -269,13 +213,14 @@
               <option value="School">Your School</option>
               <option value="OtherOrg">Through Some Other Organization</option>
               <option value="PersonalRef">Through a Friend or Personal Reference</option>
+              <option value="Other"><i>Other: please explain in the comments.</i></option>
             </select>
             <br><br>
 </li></ul>
 </section>
-<section class="form-group">
+<section class="form-food">
 
-<ul class="form-fields">
+<ul>
 
 <li>
               <label for="add_comm">
