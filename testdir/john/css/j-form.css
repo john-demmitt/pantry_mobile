@@ -1,30 +1,54 @@
 @charset "utf-8";
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 450px){
 	.pers_info label {
-display: none;	
+display: none;
 	}
+}
+*/
+html, body {
+	margin: 0;
+}
+html, body {
+	margin: 0;
+}
+html {
+	background: rgb(11, 170, 202);
 }
 	body {
 		font-family:sans-serif;
 		background-color:white;
-		width:100%;
+		width:80%;
+		margin: 0 auto;
 		font-size: 14px;
+		padding:2%;
+		line-height:1.6;
+}
+
+article, aside, section, nav, figure, header, footer {
+	display: block;
+}
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+
+	color:rgba(11, 170, 202, 1);
+	margin:0;
+	line-height:1;
 }
 
 h1 {
 	font-size: 2.5rem;
-	color:rgba(11, 170, 202, 1);
 	text-align: center;
 	text-transform: uppercase;
 }
 
 h2 {
-		font-size: 1.75rem;
+		font-size: 2rem;
 	color:rgba(51,183,210,1);
 	text-align: center;
 	text-transform: capitalize;
-margin-bottom: 5px;
 }
 
 h3 {
@@ -32,29 +56,53 @@ h3 {
 	font-size: 1.5rem;
 color:rgba(51,183,210,1);
 text-align: center;
-text-transform: capitalize;
+text-transform: upercase;
 
 }
 
+h4 {
+	font: 1.2em Lato, Helvetica, sans-serif;
+	color: black;
+}
 
-form {
-			padding:4%; 
-		margin:4%;
+a {
+	color: #77A0B8;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+code {
+	color: red;
+}
+
+
+/*form {
+		padding:2%;
+		margin:2%;
 		background-color:rgba(0,183,164,0.3);
-		width:90%;
+		width:95%;
 		display: flex;
-		flex-flow: row wrap;
-}
+		flex-flow: column wrap;
+}*/
 
-.register-form {
+.volunteer-form {
 	line-height: 1.4;
 }
 
 .form-group {
+	background: rgba(0,183,164,0.3);
+	margin-bottom: 1em;
+	padding: 5px;
+}
+
+.form-group {
 	flex: 1 0 300px;
-}.form-group ul {
+}
+
+.form-group ul {
 	list-style: none;
-	margin: 0 0 2em;
+	margin: 0 0 1em;
 	padding: 0;
 	background-color:rgba(0,183,164,0.3);
 
@@ -82,6 +130,7 @@ form {
   line-height: normal;
   max-height: 3em;
 }
+
 .form-fields input[type="text"]:focus,
 .form-fields input[type="tel"]:focus,
 .form-fields input[type="url"]:focus,
@@ -90,10 +139,11 @@ form {
 .form-food textarea:focus,
 .form-fields select:focus {
   color: #333;
-  border: 1px solid #C17CCF;
+  border: 1px solid #00b7a4;
   outline: none;
-  background: #f2f2f2;
+  background: rgba(0,183,164,0.3)
 }
+
 .form-food textarea {
     display: block;
     box-sizing: border-box;
@@ -108,9 +158,48 @@ form {
     line-height: normal;
 }
 
+.volunteer-form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
 .form-submit {
 	flex: 0 0 100%;
 }
+
+
+.form-fields li {
+display:flex;
+flex-wrap:wrap;
+}
+
+.form-fields input[type="text"],
+.form-fields input[type="tel"],
+.form-fields input[type="url"],
+.form-fields input[type="email"],
+.form-fields input[type="number"],
+.form-fields select {
+	flex: 1 0 230px;
+}
+
+	.form-fields label {
+		flex: 1 0 90px;
+		max-width: 200px;
+
+	}
+
+	.form-service, .form-workshop {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.form-service li {
+		width: 195px;
+	}
+	.form-workshop li {
+		flex: 1 0 200px;
+	}
 /*
 ul {
 				padding:4%; 
