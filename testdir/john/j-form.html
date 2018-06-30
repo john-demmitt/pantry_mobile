@@ -18,9 +18,11 @@
 	<body>
        <h1>Volunteer Application</h1>
 
-   <ul>
-      <form class="flex-form" action=" " method="post" enctype="multipart/form-data" autocomplete="on">
-              <li class="pers_info"><label for="first_name_field">First Name*:</label>
+   
+      <form class="register-form" action=" " method="post" enctype="multipart/form-data" autocomplete="on">
+        <section class="form-group">
+
+             <ul> <li class="pers_info"><label for="first_name_field">First Name*:</label>
      <input type="text" name="first_name_field" id="first_name_field"
              placeholder="First Name" required autofocus></li>
    <br>
@@ -104,7 +106,10 @@
 		  <label for="zip">zip</label>
      <input type="text" name="zip" id="zip"  placeholder="Zip" required>
 			  <br></li></li>
-              </ul><br><br>
+              </ul>
+              </section>
+              <br><br>
+              <section class="form-group">
               <ul><li>
 		  <h4>Are you under 18 years of age and/or attending school? *</h4>
    
@@ -122,12 +127,13 @@
             This is a service project for (school/organization)&nbsp;
           </label>
  <input type="text" name="is_proj" id="is_proj" class="form-control input-sm"
-         placeholder="Name of organization/Type of project"></li></ul>
+         placeholder="Name of organization/Type of project"></li></ul></section>
 <br><br>
 
   
 
- 
+<section class="form-group">
+
               <h2> Types of service</h2>
               <h3>Select all that interest you</h3>
               <ul>
@@ -146,20 +152,18 @@
          <li>         
          <input type="checkbox" id="pkup_food" value="pkup_food" name="pkup_food">
          <label for="pkup_food">Pick-up from donors; deliver to Pantry.
-         <a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Drivers" data-content="Typically mornings, regular routes and other locations as needed. Pickups scheduled 7 days a week."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></a></label><br></li>
+         <a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Drivers" data-content="Typically mornings, regular routes and other locations as needed. Pickups scheduled 7 days a week."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label><br></li>
 
-         <label>
+         <li>
          <input type="checkbox" id="unload_food" value="unload_food" name="unload_food">
-         Unload/Sort food at Pantry.
-         </label><br>  </li>
-         <li>       
-         <label>
+         <label for="unload_food">Unload/Sort Food at the Pantry.
+            <a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="Receiving" data-content="Monday-Friday 2-hour shifts from 8am-2pm. Receiving and recording food donations from our regular supermarket donors, walk-ins and food drives. Sorting and boxing items for storage."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label><br></li>
+
+
+         <li>
          <input type="checkbox" id="dist_food" value="dist_food" name="dist_food">
-         Distribute food to clients
-			 (requires training, shift availability limited):
-         Monday thru Thursday &mdash; morning &amp; afternoon shifts; Friday &mdash;
-         morning shift only. (Training opportunities limited during summer due to influx of summer volunteers.)
-         </label><br></li><li>
+         <label for="dist_food">Distribute food to clients.<a class="pop" data-placement="auto" data-toggle="popover" data-container="body" title="In-Pantry Servers" data-content="Requires training, shift availability limited: Monday thru Thursday - morning & afternoon shifts; Friday -  morning shift only. Training opportunities limited during summer due to influx of summer volunteers."><span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></label><br></li>
+
          <label>
          <input type="checkbox" id="tech_supp" value="tech_supp" name="tech_supp">
          Provide technical help (data entry, web site, social media, etc.).
@@ -174,10 +178,11 @@
               <label for="other_serv">Other service(s) you could offer:</label>
      <input type="text" name="other_serv" id="other_serv" class="form-control input-sm"
              placeholder="Other Service"></li></ul>
-
+</section>
    <br><br>
-<ul>
-    <li>
+   <section class="form-group">
+    <ul class="form-fields">
+      <li>
               <h4>Of interest to us:</h4>
               <label for="allLanguages[]">
               Do you speak a(any) language(s) other than English?
@@ -235,17 +240,24 @@
             </select>
             <br><br></li>
           </ul>
+          <ul class="form-fields">
+<li>
               <label for="car_type">
                 Type of vehicle <i>(if interested in collecting or picking up food)</i>:
               </label>
 
 		  <input type="text" name="car_type" id="car_type" class="form-control input-sm"
              placeholder="Type of Car">
+            </li></ul>
+            </section>
    <br><br>
-
-            <h4>How did you hear about us?</h4>
+   <section class="form-group">
+      <ul class="form-fields">
+<li>
+                 <h4>How did you hear about us?</h4>
             (<i>If you feel the choices too limiting, please explain in the comments.</i>)<br><br>
-   
+   </li>
+   <li>
             <select name="how_hear" class="form-control">
               <option value="">Select ...</option>
               <option value="Website">Our Website</option>
@@ -259,19 +271,27 @@
               <option value="PersonalRef">Through a Friend or Personal Reference</option>
             </select>
             <br><br>
+</li></ul>
+</section>
+<section class="form-group">
 
+<ul class="form-fields">
+
+<li>
               <label for="add_comm">
                 Additional Comments (please limit to 255 characters):
               </label>
 
 		  <textarea id="add_comm" name="add_comm" class="form-control input-sm" rows="4"
              placeholder="Additional Comments" maxlength="255"></textarea>
-    
+            </li>
    <br><br>
+   </ul>
+</section>
+<section class="form-submit">
 
               <input type="submit" name="submit" value="Submit Form" />
-
-</ul>
+</section>
         </form>
    <br>
 
