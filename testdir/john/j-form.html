@@ -8,15 +8,27 @@
   <title>Volunteer Application</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/base2.css" rel="stylesheet" type="text/css">
-  </head>
-<body>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
 
-   <div class="container-fluid mast">
-    <img src="img\WebHeadlineBanner-01.jpg" class="img-responsive" width="100%"  alt="Responsive image">
-  </div>
-  <h1>Volunteer Application</h1>
+</head>
+
+<body>
+    <div class="container-fluid mast">
+        <img src="img\WebHeadlineBanner-01.jpg" class="img-responsive"   alt="Responsive image">
+      </div>
+    <br><br>
 
   <form class="volunteer-form" action="" method="post" enctype="multipart/form-data" autocomplete="on">
+
+    <h1>Volunteer Application</h1>
+
+    <br><br>
 
     <section class="form-group">
       <!--adress section-->
@@ -117,8 +129,8 @@
 
     <section class="form-group">
       <!--age check-->
-      <ul>
-        <li>
+      <ul class="form-fields">
+                <li>
           <h4>Are you under 18 years of age and/or attending school? *</h4>
 
           <label>
@@ -131,8 +143,7 @@
         </li>
         <li>
           <label for="is_proj">
-            If this is a service project, list the school/organization&nbsp;
-          </label>
+            If this is a service project, list the school/organization</label>
           <input type="text" name="is_proj" id="is_proj" class="form-control input-sm" placeholder="Name of organization/Type of project">
         </li>
       </ul>
@@ -235,6 +246,7 @@
         </li>
       </ul>
     </section>
+
 <section class="form-group">
   <li>
         <h3>Other Ways to Help:          
@@ -248,8 +260,8 @@
             <label for="Electrical">Electrical</label>
           </li>
 <li>
-  <input type="checkbox" id="Plumming" value="Plumming" name="Plumming">
-  <label for="Plumming">Plumming</label>
+  <input type="checkbox" id="Plumbing" value="Plumbing" name="Plumbing">
+  <label for="Plumbing">Plumbing</label>
 </li>
 <li>
 <input type="checkbox" id="Carpentry" value="Carpentry" name="Carpentry">
@@ -283,9 +295,13 @@
 <input type="checkbox" id="Accounting" value="Accounting" name="Accounting">
 <label for="Accounting">Accounting</label>
 </li>	
+</ul>
+<ul>
 <li>
-          <input type="text" name="other_serv" id="other_serv" class="form-control input-sm" placeholder="Other Service">
+    <textarea id="other_serv" name="other_serv" class="form-control input-sm" rows="2" placeholder="Other Skills/Additional Info" maxlength="255"></textarea>
+          <!--<input type="text" name="other_serv" id="other_serv" class="form-control input-sm" placeholder="Other Service">-->
         </li>
+        
       </ul>
     </section>
 
@@ -344,16 +360,13 @@
             Additional Comments (please limit to 255 characters):
           </label>
 
-          <textarea id="add_comm" name="add_comm" class="form-control input-sm" rows="4" placeholder="Additional Comments" maxlength="255">
-          </textarea>
+          <textarea id="add_comm" name="add_comm" class="form-control input-sm" placeholder="Additional Comments" maxlength="255"></textarea>
         </li>
-        <br>
-        <br>
       </ul>
     </section>
 
     <section class="form-submit">
-      <input type="submit" name="submit" value="Submit Form" />
+      <input type="submit" name="submit" value="Submit Form" class="submit-btn"/>
     </section>
   </form>
   <br>
