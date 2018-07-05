@@ -159,9 +159,9 @@ li a {
 	border: #33b7d2;
 	font-size: 2.5em;
 	text-decoration: none;
-	cursor: pointer;	
+	cursor: pointer;
 }
-.submit-btn:hover, 
+.submit-btn:hover,
 .submit-btn:focus {
 	background: #33b7d2;
 }
