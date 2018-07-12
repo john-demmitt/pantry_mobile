@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Volunteer Application</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/base2.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+  </script>
+
+</head>
+
+<body>
+    <div class="container-fluid mast">
+        <img src="img\WebHeadlineBanner-01.jpg" class="img-responsive"   alt="Responsive image">
+      </div>
+    <br><br>
+
+  <form class="volunteer-form" action="" method="post" enctype="multipart/form-data" autocomplete="on">
+
+    <h1>Volunteer Application</h1>
+
+    <br><br>
+
+    <section class="form-group">
+      <!--adress section-->
+
+      <ul class="form-fields">
+        <li class="pers_info">
+          <label for="first_name_field">First Name*:</label>
+          <input type="text" name="first_name_field" id="first_name_field" placeholder="First Name" required autofocus>
+        </li>
+
+        <li class="pers_info">
+          <label for="last_name_field">Last Name*:</label>
+          <input type="text" name="last_name_field" id="last_name_field" placeholder="Last Name" required>
+        </li>
+
+        <li class="pers_info">
+          <label for="email_add">E-mail Address*:</label>
+          <input type="email" name="email_add" id="email_add" placeholder="Email" required>
+        </li>
+
+        <li class="pers_info">
+          <label for="tel">Telephone*:</label>
+          <input type="tel" name="tel" id="tel" placeholder="Phone Number" required>
+        </li>
+
+        <li class="pers_info">
+          <label for="st_add">Mailing Address*:</label>
+          <input type="text" name="st_add" id="st_add" placeholder="Street Address" required>
+        </li>
+
+        <li class="pers_info">
+          <label for="city">City*:</label>
+          <input type="text" name="city" id="city" placeholder="City" required>
+        </li>
+
+        <li class="pers_info">
+          <label for="state">State</label>
+          <select class="state" size="1" name="state" required>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA" selected="selected">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+            <option value="DC">DC</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="ME">ME</option>
+            <option value="MD">MD</option>
+            <option value="MA">MA</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MS">MS</option>
+            <option value="MO">MO</option>
+            <option value="MT">MT</option>
+            <option value="NE">NE</option>
+            <option value="NV">NV</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NY">NY</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WV">WV</option>
+            <option value="WI">WI</option>
+            <option value="WY">WY</option>
+          </select>
+        </li>
+        <li class="pers_info">
+          <label for="zip">zip</label>
+          <input type="text" name="zip" id="zip" placeholder="Zip" required>
+        </li>
+      </ul>
+    </section>
+
+    <section class="form-group">
+      <!--age check-->
+      <ul class="form-fields">
+                <li>
+          <h4>Are you under 18 years of age and/or attending school? *</h4>
+
+          <label>
+            <input type="radio" id="y18_p" value="y18_p" name="age_radio_group"> Yes
+          </label>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <label>
+            <input type="radio" id="n18_p" value="n18_p" name="age_radio_group"> No
+          </label>
+        </li>
+        <li>
+          <label for="is_proj">
+            If this is a service project, list the school/organization</label>
+          <input type="text" name="is_proj" id="is_proj" class="form-control input-sm" placeholder="Name of organization/Type of project">
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="form-group">
+      <!--types of service-->
+      <li>
+        <h3>Types of service</h3>
+        <h4>Select all that interest you</h4>
+      </li>
+      <ul class="form-service">
+
+        <li>
+          <input type="checkbox" id="col_food" value="col_food" name="col_food">
+          <label for="col_food">Sprouts Food Drives
+          </label>
+          <a class="pop" tabindex="0" role="button" data-trigger="focus" data-placement="auto" data-toggle="popover" data-container="body"
+            title="Sprouts Food Drives" data-content="Collect food donated by supermarket shoppers, two-hour shifts: 10 am to 4 pm on the first Saturday each month.">
+            <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"> </span>
+          </a>
+        </li>
+
+        <li>
+          <input type="checkbox" id="org_food" value="org_food" name="org_food">
+          <label for="org_food">Organize your own food drive.
+          </label>
+          <a class="pop" tabindex="0" role="button" data-trigger="focus" data-placement="auto" data-toggle="popover" data-container="body"
+            title="Organize a Drive" data-content="Organize a food drive in your congregation, workplace, school, civic group, or neighborhood. Click here for instructions.">
+            <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true">
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <input type="checkbox" id="pkup_food" value="pkup_food" name="pkup_food">
+          <label for="pkup_food">Pickup and deliver Donations.
+          </label>
+          <a class="pop" tabindex="0" role="button" data-trigger="focus" data-placement="auto" data-toggle="popover" data-container="body"
+            title="Drivers" data-content="Typically mornings, regular routes and other locations as needed. Pickups scheduled 7 days a week.">
+            <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true">
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <input type="checkbox" id="unload_food" value="unload_food" name="unload_food">
+          <label for="unload_food">Unload/Sort Food.
+          </label>
+          <a class="pop" tabindex="0" role="button" data-trigger="focus" data-placement="auto" data-toggle="popover" data-container="body"
+            title="Receiving" data-content="Monday-Friday. Typically 1 or 2 days a week: 8-10 am or 10am-1pm. Estimate weight of items received and post in daily log sheet. Transfer arriving food to sorting tables. Separate fresh items to bring into Pantry. Sort and store non-perishables. Maintain and clean storage facilities.">
+            <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true">
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <input type="checkbox" id="dist_food" value="dist_food" name="dist_food">
+          <label for="dist_food">Distribute food to clients.
+          </label>
+          <a class="pop" tabindex="0" role="button" data-trigger="focus" data-placement="auto" data-toggle="popover" data-container="body"
+            title="In-Pantry Servers" data-content="Mon-Fri AM & Mon-Thu Afternoon shifts. Typically 1 shift a month. Serve clients gathreing their household's allotment of food, completing paperwork and recording visits. Requires training. Shift availability limited. Training opportunities limited during summer due to influx of summer volunteers.">
+            <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true"> </span>
+          </a>
+        </li>
+
+        <li>
+          <input type="checkbox" id="cvs" value="cvs" name="cvs">
+          <label for="cvs">Pantry Client Check-In.
+          </label>
+          <a class="pop" tabindex="0" role="button" data-trigger="focus" data-placement="auto" data-toggle="popover" data-container="body"
+            title="In-Pantry Computer Volunteers" data-content="Mon-Fri AM & Mon-Thu Afternoon shifts. Typically 1 shift a week.  Requires training and some basic computer skill. Using our database, verify and register client visits to the Pantry. Update client files as necessary. Check server's notes for completeness and accuracy.">
+            <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true">
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <input type="checkbox" id="tech_supp" value="tech_supp" name="tech_supp">
+          <label for="tech_supp">Provide Technical/IT Help.
+          </label>
+          <a class="pop" tabindex="0" role="button" data-trigger="focus" data-placement="auto" data-toggle="popover" data-container="body"
+            title="Techies" data-content="Data entry, web site/social media content/development, data analytics, etc.">
+            <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true">
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <input type="checkbox" id="cleric_supp" value="cleric_supp" name="cleric_supp">
+          <label for="cleric_supp">Provide clerical help.
+          </label>
+          <a class="pop" tabindex="0" role="button" data-trigger="focus" data-placement="auto" data-toggle="popover" data-container="body"
+            title="Clerical" data-content="Emails, phone calls, mailing, etc.">
+            <span class="glyphicon glyphicon glyphicon-info-sign" aria-hidden="true">
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+<section class="form-group">
+  <li>
+        <h3>Other Ways to Help:          
+        </h3>
+            <p>We frequently need skilled and experienced help with projects, repairs and miscellaneous activities that don't call for active volunteer searches. Check off any of the following skills you have and would be willing to contribute to better fulfill our mission.
+            </p>
+          </li>
+            <ul class="form-service">
+          <li>
+            <input type="checkbox" id="Electrical" value="Electrical" name="Electrical">
+            <label for="Electrical">Electrical</label>
+          </li>
+<li>
+  <input type="checkbox" id="Plumbing" value="Plumbing" name="Plumbing">
+  <label for="Plumbing">Plumbing</label>
+</li>
+<li>
+<input type="checkbox" id="Carpentry" value="Carpentry" name="Carpentry">
+<label for="Carpentry">Carpentry</label>
+</li>
+<li>
+<input type="checkbox" id="BIntel" value="BIntel" name="BIntel">
+<label for="BIntel">Business Intelligence</label>
+</li>
+<li>
+<input type="checkbox" id="Marketing" value="Marketing" name="Marketing">
+<label for="Marketing">Creating Marketing Materials</label>
+</li>
+<li>
+<input type="checkbox" id="MailChimp" value="MailChimp" name="MailChimp">
+<label for="MailChimp">MailChimp</label>
+</li>
+<li>
+<input type="checkbox" id="Inventory" value="Inventory" name="Inventory">
+<label for="Inventory">Inventory Control</label>
+</li>
+<li>
+<input type="checkbox" id="Archiving" value="Archiving" name="Archiving">
+<label for="Archiving">Digital Archiving</label>
+</li>
+<li>
+<input type="checkbox" id="GSuite" value="GSuite" name="GSuite">
+<label for="GSuite">G-Suite</label>
+</li>
+<li>
+<input type="checkbox" id="Accounting" value="Accounting" name="Accounting">
+<label for="Accounting">Accounting</label>
+</li>	
+</ul>
+<ul>
+<li>
+    <textarea id="other_serv" name="other_serv" class="form-control input-sm" rows="2" placeholder="Other Skills/Additional Info" maxlength="255"></textarea>
+          <!--<input type="text" name="other_serv" id="other_serv" class="form-control input-sm" placeholder="Other Service">-->
+        </li>
+        
+      </ul>
+    </section>
+
+
+    <section class="form-group">
+      <ul class="form-fields">
+        <li>
+          <label for="allLanguages[]">
+            Do you speak a(any) language(s) other than English?</label>
+          <input type="text" name="allLanguages[]" id="allLanguages[]" class="form-control input-sm" placeholder="Languages and fluency">
+          <br>
+          <br>
+        </li>
+      </ul>
+
+     <!-- <ul class="form-fields">
+        <li>
+          <label for="car_type">
+            Type of vehicle
+            <i>if interested in collecting or picking up food</i>:
+          </label>
+          <input type="text" name="car_type" id="car_type" class="form-control input-sm" placeholder="Type of Car">
+        </li>
+      </ul>-->
+    </section>
+    
+    <section class="form-group">
+      <ul class="form-fields">
+        <li>
+          <label for="how_hear">How did you hear about us?</label>
+        </li>
+        <li>
+          <select name="how_hear">
+            <option value="">Select ...</option>
+            <option value="Website">Our Website</option>
+            <option value="Internet">The Internet</option>
+            <option value="Newspaper">News</option>
+            <option value="OtherMedia">Other Media</option>
+            <option value="PantryVisit">A Pantry Visit</option>
+            <option value="ReligiousOrg">Through a Religious Organization</option>
+            <option value="School">Your School</option>
+            <option value="OtherOrg">Through Some Other Organization</option>
+            <option value="PersonalRef">Through a Friend or Personal Reference</option>
+            <option value="Other">
+              <i>Other: please explain in the comments.</i>
+            </option>
+          </select>
+        </li>
+      </ul>
+    </section>
+
+    <section class="form-comm">
+      <ul>
+        <li>
+          <label for="add_comm">
+            Additional Comments (please limit to 255 characters):
+          </label>
+
+          <textarea id="add_comm" name="add_comm" class="form-control input-sm" placeholder="Additional Comments" maxlength="255"></textarea>
+        </li>
+      </ul>
+    </section>
+
+    <section class="form-submit">
+      <input type="submit" name="submit" value="Submit Form" class="submit-btn"/>
+    </section>
+  </form>
+  <br>
+
+
+</body>
+
+</html>
